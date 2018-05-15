@@ -36,6 +36,7 @@ public class InformacoesUsuarioTest {
 		WebElement formularioSignInBox = navegador.findElement(By.id("signinbox"));
 		formularioSignInBox.findElement(By.name("login")).sendKeys("julio0001");
 		formularioSignInBox.findElement(By.name("password")).sendKeys("123456");
+		
 		//
 		navegador.findElement(By.linkText("SIGN IN")).click();
 //		WebElement me = navegador.findElement(By.className("me"));
@@ -48,10 +49,12 @@ public class InformacoesUsuarioTest {
 		WebElement addmoredata = navegador.findElement(By.xpath("/html/body/div[1]/div/div/div/div[4]/div[2]/button"));
 		addmoredata.click();
 		WebElement popupAddMoreData = navegador.findElement(By.id("addmoredata"));
+		
 		//Estrutura ComboBox
 		WebElement campoBox = popupAddMoreData.findElement(By.name("type"));
 		new Select(campoBox).selectByVisibleText("Phone");
-		//
+		
+		//popup
 		popupAddMoreData.findElement(By.name("contact")).sendKeys("+55 11 91234-5678");
 		popupAddMoreData.findElement(By.linkText("SAVE")).click();
 		
@@ -64,7 +67,7 @@ public class InformacoesUsuarioTest {
 		
 	@After
 	public void tearsdown() {
-//		navegador.quit();
+		navegador.quit();
 	}
 
 }
