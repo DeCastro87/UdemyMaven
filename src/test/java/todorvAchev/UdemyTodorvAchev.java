@@ -18,7 +18,7 @@ public class UdemyTodorvAchev {
 		@Before
 		public void setUp(){
 
-			System.setProperty("webdriver.chrome.driver","C:/Webdriver/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "D:\\Eduardo\\\\Programas\\ChromeDriver\\chromedriver.exe");
 			driver = new ChromeDriver(); // driver
 			driver.manage().window().maximize(); // maximar tamanho da página
 			driver.manage().deleteAllCookies();
