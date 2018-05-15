@@ -23,7 +23,7 @@ public class UdemyTodorvAchev {
 			driver.manage().window().maximize(); // maximar tamanho da página
 			driver.manage().deleteAllCookies();
 
-			url = "http://testing.todvachev.com/";
+			url = "http://testing.todvachev.com";
 
 		}
 
